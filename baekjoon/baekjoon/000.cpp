@@ -1,36 +1,22 @@
 #include <iostream>
-#include <string>
+#include <algorithm>
 using namespace std;
-
-int n;
-string str1, str2;
-
+int n, k, temp, psum[100'001], ret = -10'000'004; //최악의 최솟값 ret
 int main()
 {
-    cin >> n;
-    cin >> str1; // a * d
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    cin >> n >> k;
     
-    int pos = str1.find('*');
-    string a = str1.substr(0, pos);
-    string b = str1.substr(pos + 1);
-    
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        cin >> str2;
-        
-        if (a.size() + b.size() > str2.size())
-        {
-            cout << "NE" << "\n";
-        }
-        else
-            if (a == str2.substr(0, a.size()) && b == str2.substr(str2.size() - b.size()))
-            {
-                cout << "DA" << "\n";
-            }
-            else
-            {
-                cout << "NE" << "\n";
-            }
+        cin >> temp;
+        psum[i] = psum[i-1] + temp;
+    }
+    
+    for (int i = 0; i < k; i++)
+    {
+        ret = max(ret, psum[i] - psum[i - k]);
     }
     
 }
