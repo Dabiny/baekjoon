@@ -1,61 +1,69 @@
-#include <iostream>
-#include <queue>
-using namespace std;
-int dy[4] = {-1, 0, 1, 0};
-int dx[4] = {0, 1, 0, -1};
-int m, n, ny, nx, startx, starty, goalx, goaly;
-int a[104][104];
-bool visited[104][104];
+//#include <iostream>
+//#include <queue>
+//using namespace std;
+//
+//const int max_n = 104;
+//const int dy[4] = {-1, 0, 1, 0};
+//const int dx[4] = {0, 1, 0, -1};
+//int n, m, sx, sy, ey, ex, a[max_n][max_n], visited[max_n][max_n], y, x;
+//
+//int main()
+//{
+//    cin >> n >> m;
+//    cin >> sy >> sx;
+//    cin >> ey >> ex;
+//
+//    for (int i = 0; i < n; i++)
+//    {
+//        for (int j = 0; j < m; j++)
+//        {
+//            cin >> a[i][j];
+//        }
+//    } // 맵정보 받아오는 중
+//
+//    queue<pair<int,int>> q;
+//    visited[sy][sx] = 1;
+//    q.push({sy, sx}); // 페어일때 푸시는 이렇게 해준다.
+//
+//    while (q.size())
+//    {
+//        tie(y, x) = q.front();
+//        //pair,tuple로 묶인녀석들을 던저서 여러 변수에 한벉에 받아올 수있음
+//        q.pop();
+//
+//        for (int i = 0; i < 4; i++)
+//        {
+//            int ny = y + dy[i];
+//            int nx = x + dx[i];
+//
+//            if (ny < 0 || ny >= n || nx < 0 || nx >= m || a[ny][nx] == 0)
+//                continue;
+//
+//            if (visited[ny][nx])
+//                continue;
+//
+//            visited[ny][nx] = visited[y][x] + 1;
+//            q.push({ny, nx});
+//        }
+//    }
+//
+//    printf("%d\n", visited[ey - 1][ex - 1]);
+//
+//    // 최단거리 디버깅
+//    for(int i = 0; i < n; i++){
+//        for(int j = 0; j < m; j++){
+//            cout << visited[i][j] << ' ';
+//        }
+//        cout << '\n';
+//    }
+//    /*
+//     1 0 5 0 9
+//     2 3 4 0 8
+//     0 0 5 6 7
+//     0 0 6 7 8
+//     0 0 7 8 9
+//     */
+//    return 0;
+//}
 
-void bfs(int y, int x)
-{
-    queue<int>q;
-    visited[y][x] == 1;
-    q.push(a[y][x]); //시작지점을 집어넣어야함
-    
-    while (q.size())
-    {
-        int u = q.front();
-        q.pop();
-        
-        for (int i = 0; i < 4; i++) //상하좌우를 돌면서
-        {
-            ny = y + dy[i];
-            nx = x + dx[i];
-            
-            if ( visited[ny][nx] == false)
-            {
-                a[ny][nx] = visited[ny][nx] + 1;
-                q.push(a[ny][nx]);
-            }
-        }
-    }
-}
-
-int main()
-{
-    cin >> n >> m;
-    cin >> startx >> starty;
-    cin >> goalx >> goaly;
-    
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < m; j++)
-        {
-            cin >> a[i][j]; //바다 육지 입력
-            
-        }
-    }
-    
-    for (int i = starty; i < goaly; i++)
-    {
-        for (int j = startx; j < goalx; j++)
-        {
-            if (!visited[i][j] && a[i][j] == 1)
-            {
-                bfs(i, j);
-            }
-        }
-    }
-}
 
