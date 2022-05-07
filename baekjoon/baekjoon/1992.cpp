@@ -6,26 +6,26 @@
 //string s;
 //char a[101][101];
 //
-//string quard(int y, int x, int size)
+//string go (int y, int x, int size)
 //{
 //    if (size == 1)
 //        return string(1, a[y][x]);
-//    char b = a[y][x];
-//    string ret = "";
+//    char ch = a[y][x];
+//    string str = "";
 //
 //    for (int i = y; i < y + size; i++)
 //    {
 //        for (int j = x; j < x + size; j++)
 //        {
-//            if ( b != a[i][j])
+//            if (ch != a[i][j])
 //            {
-//                ret += '(';
-//                ret += quard(y, x, size / 2);
-//                ret += quard(y, x + size / 2, size / 2);
-//                ret += quard(y + size / 2, x, size / 2);
-//                ret += quard(y + size / 2, x + size / 2, size / 2);
-//                ret += ')';
-//                return ret;
+//                str += '(';
+//                str += go (y, x, size / 2);
+//                str += go (y, x + size / 2, size / 2);
+//                str += go (y + size / 2, x, size / 2);
+//                str += go (y + size / 2, x + size / 2, size / 2);
+//                str += ')';
+//                return str;
 //            }
 //        }
 //    }
@@ -33,8 +33,6 @@
 //}
 //int main()
 //{
-//    ios_base::sync_with_stdio(false);
-//    cin.tie(NULL); cout.tie(NULL);
 //    cin >> n;
 //
 //    for (int i = 0; i < n; i++)
@@ -45,7 +43,6 @@
 //            a[i][j] = s[j];
 //        }
 //    }
-//    cout << quard(0, 0, n) << "\n";
 //
+//    cout << go(0, 0, n) << '\n';
 //}
-// 내일 다시보기
