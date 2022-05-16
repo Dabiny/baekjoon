@@ -16,6 +16,10 @@
 		A542E2EE282CE80B000E2AFC /* Recode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A542E2ED282CE80B000E2AFC /* Recode.cpp */; };
 		A542E2F0282CFBE9000E2AFC /* 4949.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A542E2EF282CFBE9000E2AFC /* 4949.cpp */; };
 		A542E2F2282D2DFF000E2AFC /* 14502.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A542E2F1282D2DFF000E2AFC /* 14502.cpp */; };
+		A542E2F4282E34A0000E2AFC /* 2636.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A542E2F3282E34A0000E2AFC /* 2636.cpp */; };
+		A542E2F6282F4442000E2AFC /* nc_test1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A542E2F5282F4442000E2AFC /* nc_test1.cpp */; };
+		A542E2F8282F4453000E2AFC /* nc_test2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A542E2F7282F4453000E2AFC /* nc_test2.cpp */; };
+		A542E2FA282F4465000E2AFC /* nc_test3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A542E2F9282F4465000E2AFC /* nc_test3.cpp */; };
 		A5A1742A2819046A00CEC45B /* 10988.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5A174282819046A00CEC45B /* 10988.cpp */; };
 		A5F7110A281E6C58000C2F25 /* 1629.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F71109281E6C58000C2F25 /* 1629.cpp */; };
 		A5F7110C281EBEB6000C2F25 /* 4375.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5F7110B281EBEB6000C2F25 /* 4375.cpp */; };
@@ -59,6 +63,10 @@
 		A542E2ED282CE80B000E2AFC /* Recode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recode.cpp; sourceTree = "<group>"; };
 		A542E2EF282CFBE9000E2AFC /* 4949.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 4949.cpp; sourceTree = "<group>"; };
 		A542E2F1282D2DFF000E2AFC /* 14502.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 14502.cpp; sourceTree = "<group>"; };
+		A542E2F3282E34A0000E2AFC /* 2636.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 2636.cpp; sourceTree = "<group>"; };
+		A542E2F5282F4442000E2AFC /* nc_test1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = nc_test1.cpp; sourceTree = "<group>"; };
+		A542E2F7282F4453000E2AFC /* nc_test2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = nc_test2.cpp; sourceTree = "<group>"; };
+		A542E2F9282F4465000E2AFC /* nc_test3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = nc_test3.cpp; sourceTree = "<group>"; };
 		A5A1741E2819042800CEC45B /* baekjoon */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = baekjoon; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A174282819046A00CEC45B /* 10988.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 10988.cpp; sourceTree = "<group>"; };
 		A5A1742B281907CF00CEC45B /* 1159.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1159.cpp; sourceTree = "<group>"; };
@@ -159,6 +167,10 @@
 				A542E2ED282CE80B000E2AFC /* Recode.cpp */,
 				A542E2EF282CFBE9000E2AFC /* 4949.cpp */,
 				A542E2F1282D2DFF000E2AFC /* 14502.cpp */,
+				A542E2F3282E34A0000E2AFC /* 2636.cpp */,
+				A542E2F5282F4442000E2AFC /* nc_test1.cpp */,
+				A542E2F7282F4453000E2AFC /* nc_test2.cpp */,
+				A542E2F9282F4465000E2AFC /* nc_test3.cpp */,
 			);
 			path = baekjoon;
 			sourceTree = "<group>";
@@ -220,10 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A542E2FA282F4465000E2AFC /* nc_test3.cpp in Sources */,
 				A542E2F0282CFBE9000E2AFC /* 4949.cpp in Sources */,
 				A5F7112B28264AF8000C2F25 /* test_4.cpp in Sources */,
 				A5F7112028250EE7000C2F25 /* 2910.cpp in Sources */,
 				A5F711182822B3D8000C2F25 /* 2468.cpp in Sources */,
+				A542E2F8282F4453000E2AFC /* nc_test2.cpp in Sources */,
 				A5F7111228211ED9000C2F25 /* traversal.cpp in Sources */,
 				A5F7111428224D47000C2F25 /* 2178.cpp in Sources */,
 				A5F7110C281EBEB6000C2F25 /* 4375.cpp in Sources */,
@@ -239,6 +253,8 @@
 				A5F7111628225CCE000C2F25 /* 1012.cpp in Sources */,
 				A5F71126282633C9000C2F25 /* test_1.cpp in Sources */,
 				A542E2F2282D2DFF000E2AFC /* 14502.cpp in Sources */,
+				A542E2F4282E34A0000E2AFC /* 2636.cpp in Sources */,
+				A542E2F6282F4442000E2AFC /* nc_test1.cpp in Sources */,
 				A5F7110E281FA82F000C2F25 /* dp.cpp in Sources */,
 				A53FB5FF282A7A8800016B2D /* 2870.cpp in Sources */,
 				A53FB607282B681100016B2D /* 2852.cpp in Sources */,
