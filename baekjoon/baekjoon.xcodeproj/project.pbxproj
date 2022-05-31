@@ -188,10 +188,10 @@
 				A542E2FD283275D3000E2AFC /* 1325.cpp */,
 				A542E2FF28338032000E2AFC /* 17298.cpp */,
 				A542E301283DEF66000E2AFC /* 1189.cpp */,
-				A542E2ED282CE80B000E2AFC /* Recode.cpp */,
 				A542E3032840A34C000E2AFC /* 17136.cpp */,
 				A542E3052841262F000E2AFC /* 개념강의_예제_종화는_방구쟁이.cpp */,
 				A542E30728449DBF000E2AFC /* 개념강의_예제_당근마킷_승원이.cpp */,
+				A542E2ED282CE80B000E2AFC /* Recode.cpp */,
 			);
 			path = baekjoon;
 			sourceTree = "<group>";
