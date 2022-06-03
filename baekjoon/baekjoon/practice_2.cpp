@@ -1,26 +1,22 @@
-//#include <iostream>
-//#include <string>
-//using namespace std;
-//int n;
-//string str1, str2;
-//int main()
-//{
-//    cin >> n;
-//    cin >> str1;
-//    
-//    int pos = str1.find('*');
-//    string a = str1.substr(0, pos);
-//    string b = str1.substr(pos + 1);
-//    
-//    for (int i = 0; i < n; i++)
-//    {
-//        cin >> str2;
-//        if (a.size() + b.size() > str2.size())
-//            cout << "NE" << "\n";
-//        else
-//            if (a == str2.substr(0, a.size()) && b == str2.substr(str2.size() - b.size()))
-//                cout << "DA" << "\n";
-//            else
-//                cout << "NE" << "\n";
-//    }
-//}
+#include <iostream>
+using namespace std;
+typedef long long ll;
+ll a, b, c;
+ll go (ll a, ll b)
+{
+    if (b == 1)
+        return a % c;
+    ll _c = go (a, b / 2);
+    _c = (_c * _c) % c;
+    if (b % 2)
+        _c = (_c * a) % c;
+    return _c;
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    cin >> a >> b >> c;
+    cout << go(a, b) << "\n";
+    return 0;
+}
