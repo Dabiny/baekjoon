@@ -1,18 +1,13 @@
-//#include <iostream>
-//using std::cin;
-//using std::cout;
-//using std::endl;
-//
-//int main()
+//void SwapByValue (int num1, int num2)
 //{
-//    int num = 20;
-//    cout << "hi" << endl;
-//    cout << "hello" << endl;
-//    cout << num << endl;
-//    return 0;
+//    int temp = num1;
+//    num1 = num2;
+//    num2 = temp;
 //}
-///*
-// hi
-// hello
-// 20
-// */
+//
+//void SwapByRef (int* ptr1, int* ptr2)
+//{
+//    int temp = *ptr1;
+//    *ptr1 = *ptr2;
+//    *ptr2 = temp;
+//}
