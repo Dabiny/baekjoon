@@ -1,13 +1,21 @@
-//void SwapByValue (int num1, int num2)
-//{
-//    int temp = num1;
-//    num1 = num2;
-//    num2 = temp;
-//}
-//
-//void SwapByRef (int* ptr1, int* ptr2)
-//{
-//    int temp = *ptr1;
-//    *ptr1 = *ptr2;
-//    *ptr2 = temp;
-//}
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num = 12;
+    int *ptr = &num;
+    int **dptr = &ptr;
+    
+    int &ref = num;
+    int *(&pref) = ptr;
+    int **(&dpref) = dptr;
+    
+    cout << ref << endl;
+    cout << *pref << endl;
+    cout << **dpref << endl;
+}
+/*
+ 12
+ 12
+ 12
+ */
